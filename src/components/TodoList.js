@@ -13,6 +13,7 @@ function TodoList() {
         const newTodos = [todo, ...todos];
 
         setTodos(newTodos);
+        console.log(...todos);
     };
 
     const updateTodo = (todoId, newValue) => {
@@ -50,7 +51,7 @@ function TodoList() {
             updateTodo={updateTodo}
         />
     </div>
-  )
+  );
 }
 
 export default TodoList;
